@@ -20,6 +20,8 @@ const vueEdit = r => require.ensure([], () => r(require('@/page/vueEdit')), 'vue
 const adminSet = r => require.ensure([], () => r(require('@/page/adminSet')), 'adminSet');
 const sendMessage = r => require.ensure([], () => r(require('@/page/sendMessage')), 'sendMessage');
 const explain = r => require.ensure([], () => r(require('@/page/explain')), 'explain');
+const allUser = r => require.ensure([], () => r(require('@/page/allUser')), 'allUser');
+const waitAudit = r => require.ensure([], () => r(require('@/page/waitAudit')), 'waitAudit');
 
 const routes = [
 	{
@@ -35,6 +37,14 @@ const routes = [
 			component: home,
 			meta: [],
 		},{
+            path: '/allUser',
+            component: allUser,
+            meta: ['用户管理', '所有用户'],
+        },{
+            path: '/waitAudit',
+            component: waitAudit,
+            meta: ['用户管理', '待审核'],
+        },{
 			path: '/addShop',
 			component: addShop,
 			meta: ['添加数据', '添加商铺'],

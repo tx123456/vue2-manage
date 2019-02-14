@@ -252,7 +252,7 @@
                 this.tableData = [];
                 Foods.forEach((item, index) => {
                     const tableData = {};
-                    tableData.name = item.name;
+                    tableData.expand = item.name;
                     tableData.item_id = item.item_id;
                     tableData.description = item.description;
                     tableData.rating = item.rating;

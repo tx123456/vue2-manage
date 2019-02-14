@@ -4,6 +4,7 @@
         <div class="table_container">
             <el-table
                 :data="tableData"
+                border
                 highlight-current-row
                 style="width: 100%">
                 <el-table-column
@@ -64,7 +65,7 @@
                 }],
                 currentRow: null,
                 offset: 0,
-                limit: 20,
+                limit: 200,
                 count: 0,
                 currentPage: 1,
             }
